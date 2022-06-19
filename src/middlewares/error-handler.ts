@@ -9,12 +9,14 @@ export const errorHandler = (
   next: NextFunction
 ) => {
   if (err instanceof CustomError) {
-    if(process.env.NODE_ENV === 'development') {
-      console.log(err);
+    if (process.env.NODE_ENV === "development") {
+      console.error(err);
     }
 
     return res.status(err.statusCode).send({ errors: err.serializeErrors() });
   }
+
+  console.error(err);
 
   res.status(500).send({ errors: [{ message: "Something went wrong" }] });
 };
