@@ -20,7 +20,7 @@ export * from "./events/subject";
 export * from "./events/ticket-created-event";
 export * from "./events/ticket-updated-event";
 export * from "./events/ticket-reserved-event";
-export * from "./events/ticket-not-reserved-event";
+export * from "./events/ticket-reservation-failed-event";
 export * from "./events/order-cancelled-event";
 export * from "./events/order-created-event";
 export * from "./events/order-confirmed-event";
