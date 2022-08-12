@@ -4,6 +4,7 @@ export enum Subject {
   TicketReserved = "ticket:reserved",
   TicketNotReserved = "ticket:not-reserved",
   OrderCreated = "order:created",
+  OrderConfirmed = "order:confirmed",
   OrderCancelled = "order:cancelled",
   ExpirationComplete = "expiration:complete",
   PaymentCreated = "payment:created",
