@@ -5,5 +5,6 @@ export interface TicketReservedEvent {
   data: {
     id: string;
     orderId: string;
+    version: number;
   };
 }
